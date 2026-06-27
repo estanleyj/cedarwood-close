@@ -46,40 +46,37 @@ body {
   max-height: 74svh;
 }
 
-.stroke {
+.wordmark {
   fill: none;
+  font-family: Georgia, "Times New Roman", ui-serif, serif;
+  font-size: 360px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -22px;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 4.2;
-  vector-effect: non-scaling-stroke;
+  stroke-width: 3.8;
+  text-rendering: geometricPrecision;
 }
 
-.stroke-orange {
+.letter-orange {
   stroke: var(--orange);
 }
 
-.stroke-green {
+.letter-green {
   stroke: var(--green);
 }
 
-.stroke-ochre {
+.letter-ochre {
   stroke: var(--ochre);
 }
 
-.stroke-lavender {
+.letter-lavender {
   stroke: var(--lavender);
 }
 
-.stroke-black {
-  stroke: var(--black);
-}
-
-.stroke-brown {
+.letter-brown {
   stroke: var(--brown);
-}
-
-.stroke-blue {
-  stroke: var(--blue);
 }
 
 @media (max-width: 720px) {
@@ -88,7 +85,7 @@ body {
   }
 
   .mark {
-    width: 132vw;
+    width: 96vw;
     max-width: none;
   }
 }
