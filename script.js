@@ -4,14 +4,8 @@
 
   if (redirectHosts.has(window.location.hostname)) {
     const target = new URL(window.location.href);
-    target.protocol = "https:";
+    target.protocol = "http:";
     target.hostname = canonicalHost;
     window.location.replace(target.toString());
-    return;
-  }
-
-  const year = document.getElementById("year");
-  if (year) {
-    year.textContent = String(new Date().getFullYear());
   }
 })();
